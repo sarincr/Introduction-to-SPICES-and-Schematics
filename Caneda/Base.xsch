@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!DOCTYPE caneda>
+<caneda version="0.3.1">
+    <components>
+        <component name="Voltage Source" library="Sources" pos="-160,10" transform="1,0,0,1,0,0">
+            <properties pos="-26,34">
+                <property name="Vac" value="1" visible="false"/>
+                <property name="Vdc" value="5" visible="true"/>
+                <property name="f1mag" value="1.0" visible="false"/>
+                <property name="f1phase" value="0" visible="false"/>
+                <property name="f2mag" value="1.0" visible="false"/>
+                <property name="f2phase" value="0" visible="false"/>
+                <property name="label" value="V1" visible="true"/>
+                <property name="phase" value="0" visible="false"/>
+            </properties>
+        </component>
+        <component name="Opamp" library="Active" pos="130,-10" transform="1,0,0,1,0,0">
+            <properties pos="-34,21">
+                <property name="Av" value="100k" visible="true"/>
+                <property name="GBW" value="10Meg" visible="false"/>
+                <property name="Rin" value="100Meg" visible="false"/>
+                <property name="Rout" value="0" visible="false"/>
+                <property name="label" value="X1" visible="true"/>
+                <property name="model" value="OPAMP" visible="false"/>
+            </properties>
+        </component>
+        <component name="Resistor" library="Passive" pos="-20,-50" transform="1,0,0,1,0,0">
+            <properties pos="-24,6">
+                <property name="R" value="50" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="label" value="R1" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="noisy" value="0" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Resistor" library="Passive" pos="-20,40" transform="1,0,0,1,0,0">
+            <properties pos="-24,6">
+                <property name="R" value="50" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="label" value="R2" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="noisy" value="0" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Resistor" library="Passive" pos="120,-80" transform="1,0,0,1,0,0">
+            <properties pos="-24,6">
+                <property name="R" value="50" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="label" value="R3" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="noisy" value="0" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Resistor" library="Passive" pos="60,100" transform="0,1,-1,0,0,0">
+            <properties pos="-24,6">
+                <property name="R" value="50" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="label" value="R4" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="noisy" value="0" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+    </components>
+    <ports>
+        <port name="label" pos="-60,40"/>
+        <port name="label" pos="-100,-50"/>
+        <port name="label" pos="350,-10"/>
+        <port name="Ground" pos="-70,100"/>
+        <port name="Ground" pos="60,160"/>
+        <port name="Ground" pos="-160,90"/>
+    </ports>
+    <wires>
+        <wire start="-60,40" end="-70,40"/>
+        <wire start="-40,40" end="-60,40"/>
+        <wire start="-100,-50" end="-40,-50"/>
+        <wire start="-160,-50" end="-100,-50"/>
+        <wire start="-160,40" end="-160,90"/>
+        <wire start="-160,-20" end="-160,-50"/>
+        <wire start="60,120" end="60,160"/>
+        <wire start="-70,40" end="-70,100"/>
+        <wire start="0,-50" end="60,-50"/>
+        <wire start="60,-50" end="60,-20"/>
+        <wire start="60,-20" end="100,-20"/>
+        <wire start="100,0" end="60,0"/>
+        <wire start="60,0" end="60,40"/>
+        <wire start="60,40" end="0,40"/>
+        <wire start="60,80" end="60,40"/>
+        <wire start="60,-50" end="60,-80"/>
+        <wire start="60,-80" end="100,-80"/>
+        <wire start="140,-80" end="190,-80"/>
+        <wire start="190,-80" end="190,-10"/>
+        <wire start="190,-10" end="160,-10"/>
+        <wire start="190,-10" end="270,-10"/>
+        <wire start="270,-10" end="350,-10"/>
+    </wires>
+</caneda>
