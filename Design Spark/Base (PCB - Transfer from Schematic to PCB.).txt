@@ -1,0 +1,17 @@
+Transfer from Schematic to PCB.
+-------------------------------
+
+Report Written:     Tuesday, September 07, 2021
+Design Path:        C:\Users\ANGICIA\Desktop\PCB\Design Spark\Base.pcb
+Design Title:       
+Created:            9/7/2021 1:47:42 PM
+Last Saved:         9/7/2021 1:48:00 PM
+Editing Time:       0 min
+Units:              thou (precision 0)
+
+Net class "Power" was not defined, but has been created. Please check the values in the PCB design.
+Net class "Signal" was not defined, but has been created. Please check the values in the PCB design.
+Could not load component "Ground" package "SPICE" into target design.
+Could not add "Ground1" component "Ground" package "SPICE" to target design.
+
+End Of Report.
